@@ -2,6 +2,7 @@ const Friend = require("../db/Schemas/Friend");
 const User = require("../db/Schemas/User");
 const Notification = require('../db/Schemas/Notification');
 
+
 const sendRequest = async (req, res) => {
     try {
         const { userId, friend } = req.body;
