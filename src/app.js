@@ -4,8 +4,6 @@ const cors = require('cors');
 const server = require('http').createServer(app);
 
 app.use(express.json());
-app.use(cors());
-
 require('./db/index')
 require('./socket.js')(server);
 
